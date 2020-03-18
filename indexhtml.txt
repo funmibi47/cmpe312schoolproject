@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>student portal</title>
+  <link rel="stylesheet" href="main.css">
+   <meta charset="utf-8">
+ <style>
+ table{
+	 
+	border-collapse:collapse;
+	
+ 
+}
+ 
+ th{
+ background:#3B444B;
+ color:#B2BEB5;}
+ td{
+ background:#F0F8FF;}
+ </style>
+   
+    
+</head>
+<body>
+
+ <script>
+ function sortTable() {
+  var table, rows, sorting, i, x, y, change;
+  table = document.getElementById("fumTable");
+  sorting = true;
+  
+  while (sorting) {
+   
+    sorting = false;
+    rows = table.rows;
+   
+    for (i = 1; i < (rows.length - 1); i++) {
+       
+      change = false;
+   
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+     
+      if (y.innerHTML.toUpperCase() < x.innerHTML.toUpperCase()) {
+        
+        change = true;
+        break;
+      }
+    }
+    if (change) {
+       
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      sorting = true;
+    }
+  }
+}
+ </script>
+  <div id="mum1">
+  <header id="headerr"><form>Student Nunmber <input type="number" id="one"> <input type="button" id="three" value="Submit"><span style="padding-left:74px;">Name:<span style="padding-left:350px;">Nationality:</form> <div id="two">Oğrenci No<span style="padding-left:350px;">Adı<span style="padding-left:368px;">Uyruk</div></header>
+  <div id="mu1">Department/Program<span style="padding-left:750px;">A.Status:<div id="bus"><div id="uu"></div></div></div>
+  <div id="mu2"> Bölüm/Program </div>
+  <div id="mu3">Current Ac.Term: <span style="padding-left:350px;">Fiili Dönem:<span style="padding-left:330px;"> CGPA Credit:</div>
+  <div id="mu4"> Şimdiki Akademik Dönem<span style="padding-left:710px;">CGPA Kredi</div>
+  <div id="mu5">New Ac.Term: <span style="padding-left:373px;">GPA-CGPA:<span style="padding-left:330px;">AC.Credit:</div>
+  <div id="mu6">Yeni Akademik Dönem<span style="padding-left:725px;">Akademik Kredi</div>
+  <div id="mu7">Credit Crs. Status:<span style="padding-left:350px;">Max course:<span style="padding-left:330px;">New Tot. Credit:
+  <div id="mu8">Ders Durumu<span style="padding-left:375px;">Maksimum Ders Sayısı<span style="padding-left:260px;">Yeni Toplam Kredi</div></div>
+  
+ 
+    
+  <footer id="footerr">Advisor(s)/Danışman(lar):<span style="padding-left:680px;">User:</footer>
+  
+  
+  <div id="big_wrapper">
+
+ <section id="mum">
+ <div id="baby1"> 
+  <div id="baby4"></div></div>
+  <div id="baby2">  <div id="baby5">Yet</div><div id="baby6">Alınmamış</div><div id="baby7">Desler</div></div>
+   <div id="baby3"><div id="baby31"></div></div>
+   <div id="baby8"><div id="baby81">RegısteredCourses</div><div id="baby82">kayıtlı dersler</div></div>
+   <div id="baby9"><div id="baby91"></div></div>
+   <div id="baby10"> <div id="baby11">Course taken</div><div id="baby12"> Alınan dersler</div></div>
+  </section>
+       <section id="dad">
+ <div id="kid1"> 
+  <div id="kid4"></div></div>
+  <div id="kid2">  <div id="kid5">May be Repeated</div><div id="kid6">Tekrar edilebilir</div></div>
+   <div id="kid3"><div id="kid31"></div></div>
+   <div id="kid8"><div id="kid81">Must be Taken</div><div id="kid82">Alınmamış gerekir</div></div>
+   <div id="kid9"><div id="kid91"></div></div>
+   <div id="kid10"> <div id="kid11">DeficiencyCourses</div><div id="kid12">Hazırlayıcı dersler</div></div>
+ </section>
+ 
+   <section id="uncle">
+  <div id="sis10"><div id="sis81">*</div><div id="sis811">Click any Ref.Code to add course</div></div>
+  <div id="sis11"> <div id="sis82">*</div><div id="sis822">Mouse over C.Code to view course title</div></div>
+  <div id="contain"> <input type="button" id="gg" onclick="sortTable()" value="Order BY Reg.Priority"></div>
+  </section>
+    <section id="aunty">
+  <div id="bro10"><div id="bro81">*</div><div id="bro811">Ders Kaydı için Ref.Koduna tıklayın.</div></div>
+  <div id="bro11"><div id="bro82">*</div><div id="bro822">Der Kodu  üzerinde gelerek, dersin ismini görebilirsiniz.</div></div>
+    <div id="contain"><div id="ggg"><a  href ="#">Record Sheet</a></div></div>
+	
+  </section>
+ 
+ 
+	 <div id="her">    <table id="fumTable" border="1" width="530" cellpadding="1" border-collapse=collapse >
+  
+ <tr><th>Ref.Code  <br>Ref.Kod </br> </th> 
+ <th>Crs.Code<br>DersKod</br></th>
+ <th>Cr<br>Kr</br></th>
+ <th>PreReq1<br>Koşul1</br></th>
+ <th>PreReq2<br>Koşul2</br></th>
+ <th>CourseTaken<br>Al.Ders</br></th>
+ <th>Grade<br>Not</br></th>
+  <th>Crs.Given<br>Ver.Ders</br></th>
+  </tr>
+  <tr><td><a  href ="#">29753</a></td> <td>CMSE371</td> <td>4</td> <td>29733</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29752</a></td> <td>CMSE353</td> <td>4</td> <td>29731</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29751</a></td> <td>CMSE321</td> <td>4</td> <td>29731</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29745</a></td> <td>UE02</td> <td>3</td><td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29744</a></td> <td>ENGL201</td> <td>3</td> <td>29723</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29743</a></td> <td>MATH373</td> <td>3</td> <td>29734</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29742</a></td> <td>CMPE242</td> <td>4</td> <td>29722</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29741</a></td> <td>CMSE222</td> <td>4</td> <td>29712</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29735</a></td> <td>UE01</td> <td>3</td> <td></td><td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29734</a></td> <td>MATH241</td> <td>4</td> <td>29714</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29733</a></td> <td>CMSE231</td> <td>4</td> <td>29722</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29732</a></td> <td>CMSE211</td> <td>4</td> <td>29722</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29731</a></td> <td>CMSE201</td> <td>4</td> <td>29711</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E1</a></td> <td>EPSA010</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E2</a></td> <td>EPSA020</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E3</a></td> <td>EPSB010</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E4</a></td> <td>EPSB012</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E5</a></td> <td>EPSU010</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E6</a></td> <td>ENGL185</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E7</a></td> <td>EPSA021</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">197E8</a></td> <td>EPSB011</td> <td>0</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29721</a></td> <td>CMSE100</td> <td>0</td> <td>29711</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29722</a></td> <td>CMSE112</td> <td>4</td> <td>29722</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29723</a></td> <td>ENGL192</td> <td>3</td> <td>29722</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29724</a></td> <td>MATH152</td> <td>4</td> <td>29714</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29725</a></td> <td>PHYS101</td> <td>4</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29726</a></td> <td>TUSL181</td> <td>2</td> <td></td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td><a  href ="#">29711</a></td> <td></td> <td></td> <td></td> <td></td> <td>CMPE107</td><td> A</td> <td></td></tr>
+ <tr><td><a  href ="#">29712</a></td> <td></td> <td></td> <td></td> <td></td> <td>MATH163</td> <td>A</td> <td></td></tr>
+ <tr><td><a  href ="#">29713</a></td> <td></td> <td></td> <td></td> <td></td> <td>ENGL191</td> <td>A</td> <td></td></tr>
+  <tr><td><a  href ="#">29714</a></td> <td></td> <td></td> <td></td> <td></td> <td>MATH151</td> <td>A</td> <td></td></tr>
+ <tr><td><a  href ="#">29715</a></td> <td></td> <td></td> <td></td> <td></td> <td>PHYS101</td> <td> A</td> <td></td></tr>
+  
+ </table ></div>
+ </div>
+  </div>
+   
+ 
+ 
+ 
+ 
+  <div id="herr">    <table border="1" width="740" margin:"3">
+ <tr><th colspan="7"> <h3>Time Table</h3> <br> Zaman Çizelgesı</br> </th></tr>
+ <tr><th>Period
+ <br>Saat</br></th> 
+ <th>Monday<br>Parzartesi</br></th>
+ <th>Tuesday <br>Salı</br></th>
+ <th>Wednesday<br>Çarşamba</br></th>
+ <th>Thursday<br>Perşembe</br></th>
+ <th>Friday<br>Cuma</br></th>
+ <th>Saturday<br>Cumartesi</br></th></tr>
+ <tr><td>8:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>9:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>10:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>11:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>12:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>13:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>14:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>15:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>16:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>17:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>18:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>19:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>20:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>21:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>22:30</td> <td></td> <td></td> <td></td> <td</td> <td></td> <td></td> <td></td></tr>
+ </table>
+ 
+   <table border="1" width="740" margin:"5">
+ <tr><th > <h3>Register Course List</h3> <br>Kayit Olunan Ders Listesi</br> </th></tr>
+ </table>
+  <table border="1" width="740" margin:"0">
+ <tr><th><div id="sis811"> * click Course Code To Remove(if any)</div>
+ <br>Dersi Silmek icin Ders Koduna Tiklayin</br></th> 
+ <th  ><input type="button" id="three" value="Confirm All"><br><input type="button" id="three" value="Complete Reg"></br></th></tr>
+ </table>
+  <table border="1" width="740" margin:"0">
+ <tr> <th>#</th>
+ <th>CourseCode <br>DersKod</br></th>
+ <th>Group</th>
+ <th>CourseName<br>DersAdi</br></th>
+ <th>Confirm<br>Onay</br></th></tr>
+ <tr><td>1</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td>2</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td>3</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td>4</td> <td></td> <td></td> <td></td> <td></td></tr>
+ <tr><td>5</td> <td></td> <td></td> <td></td> <td></td></tr>
+ </table>
+ </div>
+ 
+ 
+</body>
+</html>
