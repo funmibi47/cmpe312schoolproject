@@ -56,7 +56,7 @@
 }
  </script>
   <div id="mum1">
-  <header id="headerr"><form>Student Nunmber <input type="number" id="one"> <input type="button" id="three" value="Submit"><span style="padding-left:74px;">Name:<span style="padding-left:350px;">Nationality:</form> <div id="two">Oğrenci No<span style="padding-left:350px;">Adı<span style="padding-left:368px;">Uyruk</div></header>
+  <header id="headerr"><form>Student Nunmber <input type="text" id="one"> <input type="submit" id="three"><span style="padding-left:74px;">Name:<span style="padding-left:350px;">Nationality:</form> <div id="two">Oğrenci No<span style="padding-left:350px;">Adı<span style="padding-left:368px;">Uyruk</div></header>
   <div id="mu1">Department/Program<span style="padding-left:750px;">A.Status:<div id="bus"><div id="uu"></div></div></div>
   <div id="mu2"> Bölüm/Program </div>
   <div id="mu3">Current Ac.Term: <span style="padding-left:350px;">Fiili Dönem:<span style="padding-left:330px;"> CGPA Credit:</div>
