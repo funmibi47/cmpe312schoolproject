@@ -6,9 +6,9 @@
  
  #big_wrapper{
 	 border: 2px solid black;
-	 width:580px;
+	 width:530px;
 	 height:240px;
-	 margin:0px auto;
+	 margin:5px auto;
 	 background:#3B444B;
 	 display:-webkit-box;
 	 -webkit-box-orient:vertical;
@@ -27,7 +27,7 @@
  
  #mum1{
 	   border: 2px solid black;
-	 width:100%;
+	 width:1329px;
 	 height:260px;
 	   background:#3B444B;
 	   margin:3px;
@@ -47,7 +47,7 @@
 	  background:#1A2421;
 	  border: 1px solid black;
 	  padding:13px;
-	  
+	  color:white;
 	 
  }
 #footerr{
@@ -56,8 +56,13 @@
 	   
 	  border-top: 1px solid black;
 	    padding:15px;
+		 color:white;
 		 
-		 
+ }
+ 
+ #three{
+	 background:#318CE7;
+	 color:black;
  }
  
  #mum{
@@ -209,7 +214,7 @@
  
   #baby10{
 	  border:1.35px solid black;
-	 width:237px;
+	 width:190px;
 	 height:50px;
 	 margin:2px;
 	 background:#3B444B;
@@ -322,7 +327,7 @@
  
   #kid10{
 	  border:1.35px solid black;
-	 width:237px;
+	 width:190px;
 	 height:50px;
 	 margin:2px;
 	 background:#3B444B;
@@ -416,7 +421,7 @@
  
   #contain{
 	  border:1.35px solid black;
-	 width:258px;
+	 width:210px;
 	 height:55px;
 	 margin:2px;
 	 background:#1A2421;
@@ -426,7 +431,7 @@
  
   #containn{
 	  border:1.35px solid black;
-	 width:258px;
+	 width:210px;
 	 height:55px;
 	 margin:2px;
 	 background:#1A2421;
@@ -440,9 +445,6 @@
  }
  
     #gg{
-	  border:3px solid white;
-	 width:210px;
-	  
 	 padding:0;
 	 margin:2px auto;
 	 display:flex;
@@ -451,14 +453,15 @@
 	 min-height:45px;
 	 background:#966FD6;
 	 font-family:consolas;
-	  
+	 font-size:18px;
 	 border-bottom-color:white;
+	  color:#00FF6F;
 	  
  }
  
-        #ggg{
-	  border:3px solid white;
-	 width:210px;
+ #ggg{
+	 border:3px solid white;
+	 width:190px;
 	  
 	 padding:0;
 	 margin:2px auto;
@@ -470,15 +473,14 @@
 	 font-family:consolas;
 	  
 	 border-bottom-color:white;
-	  
  }
  a{
-	 position:relative;
+	position:relative;
 	 display:inline-block;
 	 padding:0;
 	 color:#00FF6F	;
 	 text-decoration:none;
-	 font-size:15px;
+	 font-size:18px;
 	 overflow:hidden;
 	 transition:0.2s;
 	 
